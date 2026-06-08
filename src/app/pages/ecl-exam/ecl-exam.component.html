@@ -1,0 +1,55 @@
+<div class="ecl-page">
+  <div class="hero">
+    <div class="container">
+      <h1>Examen ECL</h1>
+      <p class="subtitle">Centre d'examen agréé ECL au Togo</p>
+    </div>
+  </div>
+
+  <div class="container content">
+    <p class="intro">ITLA Academy est un centre d'examen ECL officiellement agréé, offrant des certifications linguistiques reconnues internationalement.</p>
+
+    <div class="info-grid">
+      <div class="info-card">
+        <h2>Qu'est-ce que l'ECL?</h2>
+        <p>L'ECL (European Consortium for the Certificate of Attainment in Modern Languages) est une certification linguistique européenne reconnue par les universités et employeurs du monde entier.</p>
+      </div>
+
+      <div class="info-card">
+        <h2>Niveaux disponibles</h2>
+        <p>Nous proposons des examens ECL pour tous les niveaux du CECRL: A1, A2, B1, B2, et C1. Choisissez le niveau qui correspond à vos compétences actuelles.</p>
+      </div>
+
+      <div class="info-card">
+        <h2>Reconnaissance internationale</h2>
+        <p>Les certificats ECL sont reconnus dans de nombreux pays européens et peuvent être utilisés pour les admissions universitaires, les demandes de visa, et les opportunités professionnelles.</p>
+      </div>
+
+      <div class="info-card">
+        <h2>Préparation à l'examen</h2>
+        <p>Nous offrons des cours de préparation spécifiques pour l'examen ECL, avec des enseignants expérimentés et des matériaux d'étude adaptés.</p>
+      </div>
+    </div>
+
+    <section class="registration-section">
+      <h2>Inscription à l'examen</h2>
+      <p>Prêt à passer votre examen ECL? Inscrivez-vous dès maintenant et choisissez votre centre d'examen.</p>
+      <button (click)="openForm()" class="btn-register">S'inscrire à l'examen</button>
+    </section>
+  </div>
+
+  <div class="modal" [class.active]="showForm" (click)="closeForm()">
+    <div class="modal-content" (click)="$event.stopPropagation()">
+      <button class="close-btn" (click)="closeForm()">×</button>
+
+      <h2>Inscription à l'examen ECL</h2>
+
+      <div class="maintenance-message">
+        <p><strong>Veuillez contacter les secrétariat ITLA pour les pré-inscriptions.</strong></p>
+        <p>Un lien d'accès aux inscriptions en ligne vous sera bien mis à disposition</p>
+        <p class="contact-info">Contactez le secrétariat pour s'inscrire :</p>
+        <p class="phone-numbers"><strong>+228 70 64 66 41 / 70 64 66 34</strong></p>
+      </div>
+    </div>
+  </div>
+</div>

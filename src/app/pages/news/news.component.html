@@ -1,0 +1,55 @@
+<div class="news-page">
+  <div class="news-header">
+    <h1>Actualités</h1>
+    <p>Restez informés des dernières nouvelles d'ITLA Academy</p>
+  </div>
+
+  <div class="loading" *ngIf="loading">
+    <p>Chargement des actualités...</p>
+  </div>
+
+  <div class="news-grid" *ngIf="!loading && news.length > 0">
+    <article
+      *ngFor="let item of news"
+      class="news-card"
+      (click)="openNews(item)">
+      <div class="news-image" *ngIf="item.image_url">
+        <img [src]="item.image_url" [alt]="item.title" />
+      </div>
+      <div class="news-content">
+        <div class="news-date">{{ formatDate(item.publish_date) }}</div>
+        <h2>{{ item.title }}</h2>
+        <p class="news-excerpt">{{ item.content.substring(0, 150) }}...</p>
+        <button class="read-more">Lire la suite</button>
+      </div>
+    </article>
+  </div>
+
+  <div class="no-news" *ngIf="!loading && news.length === 0">
+    <p>Aucune actualité disponible pour le moment.</p>
+  </div>
+
+  <div class="news-modal" *ngIf="selectedNews" (click)="closeNews()">
+    <div class="modal-content" (click)="$event.stopPropagation()">
+      <button class="close-btn" (click)="closeNews()">&times;</button>
+
+      <div class="modal-image" *ngIf="selectedNews.image_url">
+        <img [src]="selectedNews.image_url" [alt]="selectedNews.title" />
+      </div>
+
+      <div class="modal-video" *ngIf="selectedNews.video_url">
+        <iframe
+          [src]="selectedNews.video_url"
+          frameborder="0"
+          allowfullscreen>
+        </iframe>
+      </div>
+
+      <div class="modal-body">
+        <div class="modal-date">{{ formatDate(selectedNews.publish_date) }}</div>
+        <h2>{{ selectedNews.title }}</h2>
+        <div class="modal-text">{{ selectedNews.content }}</div>
+      </div>
+    </div>
+  </div>
+</div>

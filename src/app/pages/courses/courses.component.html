@@ -1,0 +1,61 @@
+<div class="courses-page">
+  <div class="hero">
+    <div class="container">
+      <h1>Nos Formations en Allemand</h1>
+      <p class="subtitle">Du débutant à l'avancé - Des programmes adaptés à tous les niveaux</p>
+    </div>
+  </div>
+
+  <div class="container content">
+    <p class="intro">Nos formations en allemand suivent le Cadre Européen Commun de Référence pour les Langues (CECRL). Que vous soyez débutant complet ou que vous souhaitiez perfectionner votre allemand, nous avons le programme adapté à vos besoins.</p>
+
+    <div class="courses-list">
+      <div *ngFor="let course of courses" class="course-detail">
+        <div class="course-header">
+          <span class="level-badge">{{ course.level }}</span>
+          <h2>{{ getCourseTitle(course.level) }}</h2>
+        </div>
+        <p class="course-desc">{{ getCourseDescription(course.level) }}</p>
+
+        <div class="course-info">
+          <div class="info-item">
+            <strong>Durée:</strong> {{ course.duration }}
+          </div>
+
+          <div class="info-item">
+            <strong>Objectifs:</strong>
+            <ul>
+              <li *ngFor="let obj of course.objectives">{{ obj }}</li>
+            </ul>
+          </div>
+
+          <div class="info-item">
+            <strong>Résultats attendus:</strong>
+            <ul>
+              <li *ngFor="let outcome of course.outcomes">{{ outcome }}</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cta-section">
+      <button (click)="openForm()" class="btn-register">S'inscrire maintenant</button>
+    </div>
+  </div>
+
+  <div class="modal" [class.active]="showForm" (click)="closeForm()">
+    <div class="modal-content" (click)="$event.stopPropagation()">
+      <button class="close-btn" (click)="closeForm()">×</button>
+
+      <h2>Inscription aux formations</h2>
+
+      <div class="maintenance-message">
+        <p><strong>Vous ne pouvez pas vous inscrire pour le moment.</strong></p>
+        <p>Nous travaillons pour vous le rendre accessible.</p>
+        <p class="contact-info">Contactez le secrétariat pour s'inscrire :</p>
+        <p class="phone-numbers"><strong>+228 70 64 66 41 / 70 64 66 34</strong></p>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,26 @@
+<div class="centers-page">
+  <div class="hero">
+    <div class="container">
+      <h1>Nos Centres de Formation</h1>
+      <p class="subtitle">Trouvez le centre ITLA Academy le plus proche de chez vous</p>
+    </div>
+  </div>
+
+  <div class="container content">
+    <p class="intro">ITLA Academy dispose de plusieurs centres de formation à travers le Togo, tous équipés des dernières technologies pédagogiques pour vous offrir la meilleure expérience d'apprentissage de l'allemand.</p>
+
+    <div class="centers-list">
+      <div *ngFor="let center of centers" class="center-detail">
+        <h2>{{ center.name }}</h2>
+        <div class="center-info">
+          <p><strong>Adresse:</strong> {{ center.address }}</p>
+          <p><strong>Point de repère:</strong> {{ center.landmark }}</p>
+          <p><strong>Téléphone:</strong></p>
+          <ul>
+            <li *ngFor="let phone of center.phone">{{ phone }}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

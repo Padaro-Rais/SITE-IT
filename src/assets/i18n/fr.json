@@ -1,0 +1,348 @@
+{
+  "common": {
+    "home": "Accueil",
+    "about": "À propos",
+    "courses": "Formations",
+    "travelAgency": "Voyage en Allemange",
+    "eclExam": "Examen ECL",
+    "centers": "Nos centres",
+    "contact": "Contact",
+    "learnMore": "En savoir plus",
+    "register": "S'inscrire",
+    "submit": "Envoyer",
+    "cancel": "Annuler",
+    "close": "Fermer",
+    "success": "Succès",
+    "error": "Erreur",
+    "loading": "Chargement...",
+    "phone": "Téléphone",
+    "email": "Email",
+    "address": "Adresse"
+  },
+  "header": {
+    "slogan": "Votre Expert en Voyage pour l'Allemage"
+  },
+  "footer": {
+    "about": "À propos d'ITLA Academy",
+    "aboutText": "Institut Technique de Langue Appliquée - Votre partenaire pour l'apprentissage de l'allemand et votre voyage vers l'Allemagne.",
+    "quickLinks": "Liens rapides",
+    "contactUs": "Nous contacter",
+    "followUs": "Suivez-nous",
+    "copyright": "© 2026 ITLA Academy. Tous droits réservés."
+  },
+  "home": {
+    "slider": {
+      "slide1": {
+        "title": "Apprenez l'allemand avec ITLA Academy",
+        "subtitle": "Des cours de qualité de A1 à B2"
+      },
+      "slide2": {
+        "title": "Construisez votre avenir en Allemagne",
+        "subtitle": "Nous vous accompagnons dans votre projet"
+      },
+      "slide3": {
+        "title": "Centre officiel d'examen ECL",
+        "subtitle": "Certifications internationalement reconnues"
+      }
+    },
+    "cta": {
+      "registerCourse": "S'inscrire aux cours",
+      "registerExam": "S'inscrire à l'examen ECL"
+    },
+    "whoWeAre": {
+      "title": "Qui sommes-nous ?",
+      "description": "ITLA Academy (Institut Technique de Langue Appliquée) est votre partenaire de confiance au Togo pour l'apprentissage de l'allemand et la réalisation de vos projets en Allemagne. Nous offrons des formations de qualité, des services d'Voyage en Allemange spécialisée et sommes un centre officiel d'examen ECL."
+    },
+    "ourCourses": {
+      "title": "Nos formations",
+      "description": "Des cours structurés pour tous les niveaux"
+    },
+    "travelAgency": {
+      "title": "Voyage en Allemange",
+      "description": "Nous vous accompagnons dans toutes vos démarches pour vous installer en Allemagne : formation professionnelle, emploi direct, regroupement familial, études supérieures."
+    },
+    "eclCenter": {
+      "title": "Centre d'examen ECL",
+      "description": "ITLA Academy est un centre officiel pour les examens ECL (European Consortium for the Certificate of Attainment in Modern Languages), reconnus internationalement."
+    },
+    "ourCenters": {
+      "title": "Nos centres",
+      "description": "3 centres à Lomé pour vous servir"
+    },
+    "whyChooseUs": {
+      "title": "Pourquoi choisir ITLA Academy ?",
+      "reason1": {
+        "title": "Professeurs qualifiés",
+        "description": "Équipe pédagogique expérimentée et diplômée"
+      },
+      "reason2": {
+        "title": "Méthodes modernes",
+        "description": "Approche communicative et interactive"
+      },
+      "reason3": {
+        "title": "Suivi personnalisé",
+        "description": "Accompagnement individuel de chaque étudiant"
+      },
+      "reason4": {
+        "title": "Centre ECL officiel",
+        "description": "Certifications reconnues internationalement"
+      },
+      "reason5": {
+        "title": "Services complets",
+        "description": "Formation + voyage + examens"
+      },
+      "reason6": {
+        "title": "Taux de réussite élevé",
+        "description": "Nos étudiants réussissent leurs projets"
+      }
+    },
+    "finalCta": {
+      "title": "Prêt à commencer votre aventure ?",
+      "description": "Rejoignez ITLA Academy et construisez votre avenir en Allemagne",
+      "button": "Contactez-nous"
+    }
+  },
+  "about": {
+    "title": "À propos d'ITLA Academy",
+    "subtitle": "Institut Technique de Langue Appliquée",
+    "intro": "ITLA Academy est né de la volonté de créer un pont entre le Togo et l'Allemagne, en offrant des formations linguistiques de qualité et un accompagnement complet pour tous vos projets en Allemagne.",
+    "mission": {
+      "title": "Notre mission",
+      "description": "Former des apprenants compétents en langue allemande et les accompagner dans la réalisation de leurs projets professionnels, académiques ou personnels en Allemagne."
+    },
+    "vision": {
+      "title": "Notre vision",
+      "description": "Devenir la référence au Togo pour l'apprentissage de l'allemand et l'accompagnement vers l'Allemagne."
+    },
+    "values": {
+      "title": "Nos valeurs",
+      "quality": "Qualité de l'enseignement",
+      "excellence": "Excellence pédagogique",
+      "support": "Accompagnement personnalisé",
+      "integrity": "Intégrité et transparence"
+    },
+    "team": {
+      "title": "Notre équipe",
+      "description": "Une équipe de professeurs qualifiés et de conseillers expérimentés à votre service."
+    }
+  },
+  "courses": {
+    "title": "Nos formations en allemand",
+    "subtitle": "Des cours structurés de A1 à B2",
+    "description": "Nous proposons des formations complètes en allemand selon le Cadre Européen Commun de Référence pour les Langues (CECRL).",
+    "duration": "Durée",
+    "objectives": "Objectifs",
+    "outcomes": "Débouchés",
+    "levels": {
+      "a1": {
+        "name": "Niveau A1 - Débutant",
+        "description": "Niveau découverte - Premières interactions en allemand"
+      },
+      "a2": {
+        "name": "Niveau A2 - Élémentaire",
+        "description": "Niveau de survie - Communication simple et quotidienne"
+      },
+      "b1": {
+        "name": "Niveau B1 - Intermédiaire",
+        "description": "Niveau seuil - Autonomie dans les situations courantes"
+      },
+      "b2": {
+        "name": "Niveau B2 - Avancé",
+        "description": "Niveau avancé - Communication fluide et argumentée"
+      }
+    },
+    "modes": {
+      "title": "Modes de formation",
+      "inPerson": "Présentiel",
+      "online": "En ligne"
+    }
+  },
+  "travel": {
+    "title": "Voyage en Allemange vers l'Allemagne",
+    "subtitle": "Votre projet, notre expertise",
+    "intro": "ITLA Academy vous accompagne dans toutes vos démarches pour concrétiser votre projet en Allemagne.",
+    "services": {
+      "title": "Nos services",
+      "training": {
+        "title": "Formation professionnelle",
+        "description": "Ausbildung - Formation en alternance dans divers métiers recherchés en Allemagne"
+      },
+      "employment": {
+        "title": "Emploi direct",
+        "description": "Opportunités d'emploi direct avec des employeurs allemands"
+      },
+      "family": {
+        "title": "Regroupement familial",
+        "description": "Accompagnement pour rejoindre votre famille en Allemagne"
+      },
+      "studies": {
+        "title": "Études supérieures",
+        "description": "Admission dans les universités et écoles supérieures allemandes"
+      }
+    },
+    "process": {
+      "title": "Notre processus",
+      "step1": {
+        "title": "Consultation",
+        "description": "Analyse de votre profil et de vos objectifs"
+      },
+      "step2": {
+        "title": "Préparation linguistique",
+        "description": "Formation en allemand au niveau requis"
+      },
+      "step3": {
+        "title": "Constitution du dossier",
+        "description": "Aide à la préparation de tous les documents"
+      },
+      "step4": {
+        "title": "Démarches administratives",
+        "description": "Accompagnement pour les visas et formalités"
+      },
+      "step5": {
+        "title": "Départ et arrivée",
+        "description": "Support jusqu'à votre installation en Allemagne"
+      }
+    },
+    "cta": "Contactez-nous pour votre projet"
+  },
+  "ecl": {
+    "title": "Examen ECL - European Consortium for the Certificate of Attainment in Modern Languages",
+    "subtitle": "Certification internationale reconnue",
+    "intro": "ITLA Academy est un centre officiel d'examen ECL, vous permettant de certifier votre niveau en allemand avec une reconnaissance internationale.",
+    "about": {
+      "title": "Qu'est-ce que l'ECL ?",
+      "description": "L'ECL est un système de certification linguistique reconnu dans toute l'Europe et au-delà. Il évalue vos compétences en compréhension et expression orales et écrites."
+    },
+    "levels": {
+      "title": "Niveaux disponibles",
+      "description": "Examens disponibles pour tous les niveaux du A1 au C1"
+    },
+    "recognition": {
+      "title": "Reconnaissance internationale",
+      "description": "Les certificats ECL sont reconnus par les universités, employeurs et institutions en Europe et dans le monde entier."
+    },
+    "preparation": {
+      "title": "Préparation à l'examen",
+      "description": "Nous proposons des sessions de préparation spécifiques pour maximiser vos chances de réussite."
+    },
+    "registration": {
+      "title": "Inscription à l'examen",
+      "description": "Les sessions d'examen sont organisées régulièrement. Inscrivez-vous dès maintenant.",
+      "button": "S'inscrire à l'examen ECL"
+    }
+  },
+  "centers": {
+    "title": "Nos centres à Lomé",
+    "subtitle": "3 centres pour mieux vous servir",
+    "description": "ITLA Academy dispose de trois centres à Lomé, équipés de salles modernes et accessibles.",
+    "center1": {
+      "name": "Agoè démakpoè",
+      "landmark": "Église Auto"
+    },
+    "center2": {
+      "name": "Adidogomé Atigangomé",
+      "landmark": "Station sanol"
+    },
+    "center3": {
+      "name": "Kogan",
+      "landmark": "Mosquée, Mairie, Afiadegnigban"
+    },
+    "visitUs": "Visitez-nous"
+  },
+  "contact": {
+    "title": "Contactez-nous",
+    "subtitle": "Nous sommes à votre écoute",
+    "form": {
+      "name": "Nom complet",
+      "email": "Email",
+      "phone": "Téléphone",
+      "subject": "Sujet",
+      "message": "Message",
+      "send": "Envoyer le message"
+    },
+    "info": {
+      "title": "Informations de contact",
+      "phones": "Téléphones",
+      "email": "Email",
+      "hours": "Horaires d'ouverture",
+      "hoursValue": "Lundi - Samedi : 8h - 18h"
+    },
+    "success": "Votre message a été envoyé avec succès. Nous vous répondrons dans les plus brefs délais.",
+    "error": "Une erreur s'est produite. Veuillez réessayer."
+  },
+  "registration": {
+    "course": {
+      "title": "Inscription aux cours d'allemand",
+      "firstName": "Prénom",
+      "lastName": "Nom",
+      "phone": "Téléphone",
+      "email": "Email",
+      "center": "Centre",
+      "selectCenter": "Sélectionnez un centre",
+      "level": "Niveau",
+      "selectLevel": "Sélectionnez un niveau",
+      "mode": "Mode",
+      "selectMode": "Sélectionnez un mode",
+      "inPerson": "Présentiel",
+      "online": "En ligne",
+      "submit": "S'inscrire",
+      "success": "Votre inscription a été enregistrée avec succès. Nous vous contacterons sous peu.",
+      "error": "Une erreur s'est produite. Veuillez réessayer."
+    },
+    "ecl": {
+      "title": "Inscription à l'examen ECL",
+      "firstName": "Prénom",
+      "lastName": "Nom",
+      "phone": "Téléphone",
+      "email": "Email",
+      "eclLevel": "Niveau ECL",
+      "selectLevel": "Sélectionnez un niveau",
+      "examCenter": "Centre d'examen",
+      "selectCenter": "Sélectionnez un centre",
+      "submit": "S'inscrire à l'examen",
+      "success": "Votre inscription à l'examen a été enregistrée avec succès. Nous vous contacterons pour les détails.",
+      "error": "Une erreur s'est produite. Veuillez réessayer."
+    }
+  },
+  "admin": {
+    "dashboard": {
+      "title": "Tableau de bord",
+      "courseRegistrations": "Inscriptions aux cours",
+      "eclRegistrations": "Inscriptions ECL",
+      "contactMessages": "Messages",
+      "viewAll": "Voir tout"
+    },
+    "courseRegistrations": {
+      "title": "Inscriptions aux cours",
+      "name": "Nom",
+      "email": "Email",
+      "phone": "Téléphone",
+      "center": "Centre",
+      "level": "Niveau",
+      "mode": "Mode",
+      "status": "Statut",
+      "date": "Date",
+      "actions": "Actions",
+      "delete": "Supprimer",
+      "confirmDelete": "Êtes-vous sûr de vouloir supprimer cette inscription ?",
+      "statuses": {
+        "pending": "En attente",
+        "confirmed": "Confirmée",
+        "cancelled": "Annulée"
+      }
+    },
+    "eclRegistrations": {
+      "title": "Inscriptions examen ECL",
+      "name": "Nom",
+      "email": "Email",
+      "phone": "Téléphone",
+      "level": "Niveau",
+      "center": "Centre",
+      "status": "Statut",
+      "date": "Date",
+      "actions": "Actions",
+      "delete": "Supprimer",
+      "confirmDelete": "Êtes-vous sûr de vouloir supprimer cette inscription ?"
+    }
+  }
+}

@@ -1,0 +1,57 @@
+<header class="header">
+  <div class="top-bar">
+    <div class="container">
+      <div class="logo-section">
+        <a routerLink="/" (click)="closeMenu()">
+          <img src="assets/logo-removebg-preview.png" alt="ITLA Academy Logo" class="logo-img">
+          <div class="logo-text">
+            <h1>ITLA ACADEMY</h1>
+            <p class="slogan">Votre Expert en Voyage pour l'Allemage</p>
+          </div>
+        </a>
+      </div>
+      <div class="top-actions">
+        <a routerLink="/login" class="action-btn red">CONNEXION</a>
+        <a routerLink="/register" class="action-btn red">INSCRIPTIONS</a>
+        <a routerLink="/gallery" class="action-btn red">GALERIE</a>
+      </div>
+    </div>
+  </div>
+
+  <nav class="main-nav">
+    <div class="container">
+      <button class="menu-toggle" (click)="toggleMenu()" [class.active]="isMenuOpen">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="nav-menu" [class.open]="isMenuOpen">
+        <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="closeMenu()">
+          Accueil
+        </a>
+        <a routerLink="/about" routerLinkActive="active" (click)="closeMenu()">
+          À propos
+        </a>
+        <a routerLink="/courses" routerLinkActive="active" (click)="closeMenu()">
+          Nos Formations
+        </a>
+        <a routerLink="/ecl-exam" routerLinkActive="active" (click)="closeMenu()">
+          Examen ECL
+        </a>
+        <a routerLink="/travel-agency" routerLinkActive="active" (click)="closeMenu()">
+          Voyage en Allemagne
+        </a>
+        <a routerLink="/centers" routerLinkActive="active" (click)="closeMenu()">
+          Nos Centres
+        </a>
+        <a routerLink="/news" routerLinkActive="active" (click)="closeMenu()">
+          Actualités
+        </a>
+        <a routerLink="/contact" routerLinkActive="active" (click)="closeMenu()">
+          Contact
+        </a>
+      </div>
+    </div>
+  </nav>
+</header>

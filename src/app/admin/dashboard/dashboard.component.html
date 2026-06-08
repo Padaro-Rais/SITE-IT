@@ -1,0 +1,40 @@
+<div class="dashboard">
+  <h1>{{ 'admin.dashboard.title' | translate }}</h1>
+
+  <div class="stats-grid">
+    <div class="stat-card">
+      <h2>{{ 'admin.dashboard.courseRegistrations' | translate }}</h2>
+      <div class="stat-number">{{ courseStats.total }}</div>
+      <div class="stat-details">
+        <span>En attente: {{ courseStats.pending }}</span>
+        <span>Confirmées: {{ courseStats.confirmed }}</span>
+      </div>
+      <a routerLink="/admin/course-registrations" class="view-link">
+        {{ 'admin.dashboard.viewAll' | translate }} →
+      </a>
+    </div>
+
+    <div class="stat-card">
+      <h2>{{ 'admin.dashboard.eclRegistrations' | translate }}</h2>
+      <div class="stat-number">{{ eclStats.total }}</div>
+      <div class="stat-details">
+        <span>En attente: {{ eclStats.pending }}</span>
+        <span>Confirmées: {{ eclStats.confirmed }}</span>
+      </div>
+      <a routerLink="/admin/ecl-registrations" class="view-link">
+        {{ 'admin.dashboard.viewAll' | translate }} →
+      </a>
+    </div>
+
+    <div class="stat-card">
+      <h2>Actualités</h2>
+      <div class="stat-number">-</div>
+      <div class="stat-details">
+        <span>Gérer les actualités du site</span>
+      </div>
+      <a routerLink="/admin/news-management" class="view-link">
+        Gérer →
+      </a>
+    </div>
+  </div>
+</div>

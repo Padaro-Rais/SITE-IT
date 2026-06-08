@@ -1,0 +1,123 @@
+<div class="news-management">
+  <div class="header">
+    <h1>Gestion des Actualités</h1>
+    <button class="btn-primary" (click)="openCreateModal()">+ Nouvelle Actualité</button>
+  </div>
+
+  <div class="loading" *ngIf="loading">
+    <p>Chargement...</p>
+  </div>
+
+  <div class="news-table" *ngIf="!loading">
+    <table>
+      <thead>
+        <tr>
+          <th>Titre</th>
+          <th>Date de publication</th>
+          <th>Statut</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of news">
+          <td>{{ item.title }}</td>
+          <td>{{ formatDate(item.publish_date) }}</td>
+          <td>
+            <span class="badge" [class.published]="item.published" [class.draft]="!item.published">
+              {{ item.published ? 'Publié' : 'Brouillon' }}
+            </span>
+          </td>
+          <td class="actions">
+            <button class="btn-edit" (click)="openEditModal(item)">Modifier</button>
+            <button class="btn-delete" (click)="deleteNews(item.id!)">Supprimer</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="no-data" *ngIf="news.length === 0">
+      <p>Aucune actualité. Créez-en une nouvelle.</p>
+    </div>
+  </div>
+
+  <div class="modal" *ngIf="showModal" (click)="closeModal()">
+    <div class="modal-content" (click)="$event.stopPropagation()">
+      <div class="modal-header">
+        <h2>{{ editingNews ? 'Modifier l\'actualité' : 'Nouvelle actualité' }}</h2>
+        <button class="close-btn" (click)="closeModal()">&times;</button>
+      </div>
+
+      <form (ngSubmit)="saveNews()" class="modal-form">
+        <div class="form-group">
+          <label for="title">Titre *</label>
+          <input
+            type="text"
+            id="title"
+            [(ngModel)]="formData.title"
+            name="title"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="content">Contenu *</label>
+          <textarea
+            id="content"
+            [(ngModel)]="formData.content"
+            name="content"
+            rows="8"
+            required
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="image_url">URL de l'image</label>
+          <input
+            type="url"
+            id="image_url"
+            [(ngModel)]="formData.image_url"
+            name="image_url"
+            placeholder="https://example.com/image.jpg"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="video_url">URL de la vidéo</label>
+          <input
+            type="url"
+            id="video_url"
+            [(ngModel)]="formData.video_url"
+            name="video_url"
+            placeholder="https://youtube.com/embed/..."
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="publish_date">Date de publication</label>
+          <input
+            type="date"
+            id="publish_date"
+            [(ngModel)]="formData.publish_date"
+            name="publish_date"
+          />
+        </div>
+
+        <div class="form-group checkbox-group">
+          <label>
+            <input
+              type="checkbox"
+              [(ngModel)]="formData.published"
+              name="published"
+            />
+            Publier immédiatement
+          </label>
+        </div>
+
+        <div class="modal-actions">
+          <button type="button" class="btn-cancel" (click)="closeModal()">Annuler</button>
+          <button type="submit" class="btn-save">Enregistrer</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

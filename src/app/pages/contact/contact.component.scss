@@ -1,0 +1,157 @@
+.contact-page {
+  .hero {
+    background: linear-gradient(135deg, #003366 0%, #0055aa 100%);
+    color: white;
+    padding: 4rem 0;
+    text-align: center;
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .subtitle {
+      font-size: 1.5rem;
+      opacity: 0.95;
+    }
+  }
+
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+
+    &.content {
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+    }
+  }
+
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 3rem;
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .contact-form-section {
+    .success-message {
+      background: #d4edda;
+      color: #155724;
+      padding: 1rem;
+      border-radius: 4px;
+      margin-bottom: 1rem;
+    }
+
+    .error-message {
+      background: #f8d7da;
+      color: #721c24;
+      padding: 1rem;
+      border-radius: 4px;
+      margin-bottom: 1rem;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+
+      @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .form-group {
+      margin-bottom: 1.5rem;
+
+      label {
+        display: block;
+        margin-bottom: 0.5rem;
+        color: #333;
+        font-weight: 600;
+      }
+
+      input,
+      textarea {
+        width: 100%;
+        padding: 0.75rem;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        font-size: 1rem;
+        font-family: inherit;
+
+        &:focus {
+          outline: none;
+          border-color: #003366;
+        }
+      }
+
+      textarea {
+        resize: vertical;
+      }
+    }
+
+    .btn-submit {
+      width: 100%;
+      background: #003366;
+      color: white;
+      border: none;
+      padding: 1rem;
+      font-size: 1.125rem;
+      font-weight: 600;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+
+      &:hover:not(:disabled) {
+        background: #0055aa;
+      }
+
+      &:disabled {
+        opacity: 0.6;
+        cursor: not-allowed;
+      }
+    }
+  }
+
+  .contact-info-section {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 8px;
+    height: fit-content;
+
+    h2 {
+      color: #003366;
+      font-size: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .info-item {
+      margin-bottom: 1.5rem;
+
+      h3 {
+        color: #003366;
+        font-size: 1.125rem;
+        margin-bottom: 0.5rem;
+      }
+
+      p {
+        color: #555;
+        margin: 0.25rem 0;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .hero h1 {
+      font-size: 2rem;
+    }
+
+    .hero .subtitle {
+      font-size: 1.125rem;
+    }
+  }
+}

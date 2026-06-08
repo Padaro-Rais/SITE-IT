@@ -1,0 +1,12 @@
+<div class="card">
+  <div class="card-icon" *ngIf="icon">
+    <span>{{ icon }}</span>
+  </div>
+  <div class="card-content">
+    <h3 class="card-title">{{ title }}</h3>
+    <p class="card-description">{{ description }}</p>
+    <a *ngIf="link" [routerLink]="link" class="card-link">
+      {{ linkText | translate }} →
+    </a>
+  </div>
+</div>

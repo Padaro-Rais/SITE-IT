@@ -1,0 +1,40 @@
+<div class="registrations">
+  <h1>{{ 'admin.eclRegistrations.title' | translate }}</h1>
+
+  <div *ngIf="loading" class="loading">{{ 'common.loading' | translate }}</div>
+
+  <div *ngIf="!loading && registrations.length === 0" class="empty">
+    Aucune inscription pour le moment.
+  </div>
+
+  <div *ngIf="!loading && registrations.length > 0" class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th>{{ 'admin.eclRegistrations.name' | translate }}</th>
+          <th>{{ 'admin.eclRegistrations.email' | translate }}</th>
+          <th>{{ 'admin.eclRegistrations.phone' | translate }}</th>
+          <th>{{ 'admin.eclRegistrations.level' | translate }}</th>
+          <th>{{ 'admin.eclRegistrations.center' | translate }}</th>
+          <th>{{ 'admin.eclRegistrations.date' | translate }}</th>
+          <th>{{ 'admin.eclRegistrations.actions' | translate }}</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let reg of registrations">
+          <td>{{ reg.first_name }} {{ reg.last_name }}</td>
+          <td>{{ reg.email }}</td>
+          <td>{{ reg.phone }}</td>
+          <td><span class="badge">{{ reg.ecl_level }}</span></td>
+          <td>{{ reg.exam_center }}</td>
+          <td>{{ reg.created_at | date:'dd/MM/yyyy' }}</td>
+          <td>
+            <button (click)="deleteRegistration(reg.id!)" class="btn-delete">
+              {{ 'admin.eclRegistrations.delete' | translate }}
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

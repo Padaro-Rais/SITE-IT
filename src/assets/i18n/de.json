@@ -1,0 +1,348 @@
+{
+  "common": {
+    "home": "Startseite",
+    "about": "Über uns",
+    "courses": "Kurse",
+    "travelAgency": "Reisebüro",
+    "eclExam": "ECL-Prüfung",
+    "centers": "Unsere Zentren",
+    "contact": "Kontakt",
+    "learnMore": "Mehr erfahren",
+    "register": "Anmelden",
+    "submit": "Senden",
+    "cancel": "Abbrechen",
+    "close": "Schließen",
+    "success": "Erfolg",
+    "error": "Fehler",
+    "loading": "Laden...",
+    "phone": "Telefon",
+    "email": "E-Mail",
+    "address": "Adresse"
+  },
+  "header": {
+    "slogan": "Ihr Tor nach Deutschland"
+  },
+  "footer": {
+    "about": "Über ITLA Academy",
+    "aboutText": "Technisches Institut für Angewandte Sprachen - Ihr Partner für das Deutschlernen und Ihre Reise nach Deutschland.",
+    "quickLinks": "Schnelllinks",
+    "contactUs": "Kontaktieren Sie uns",
+    "followUs": "Folgen Sie uns",
+    "copyright": "© 2026 ITLA Academy. Alle Rechte vorbehalten."
+  },
+  "home": {
+    "slider": {
+      "slide1": {
+        "title": "Lernen Sie Deutsch mit ITLA Academy",
+        "subtitle": "Qualitätskurse von A1 bis B2"
+      },
+      "slide2": {
+        "title": "Bauen Sie Ihre Zukunft in Deutschland auf",
+        "subtitle": "Wir begleiten Sie bei Ihrem Projekt"
+      },
+      "slide3": {
+        "title": "Offizielles ECL-Prüfungszentrum",
+        "subtitle": "International anerkannte Zertifizierungen"
+      }
+    },
+    "cta": {
+      "registerCourse": "Für Kurse anmelden",
+      "registerExam": "Für ECL-Prüfung anmelden"
+    },
+    "whoWeAre": {
+      "title": "Wer sind wir?",
+      "description": "ITLA Academy (Technisches Institut für Angewandte Sprachen) ist Ihr vertrauenswürdiger Partner in Togo für das Deutschlernen und die Verwirklichung Ihrer Projekte in Deutschland. Wir bieten qualitativ hochwertige Schulungen, spezialisierte Reisebürodienste und sind ein offizielles ECL-Prüfungszentrum."
+    },
+    "ourCourses": {
+      "title": "Unsere Kurse",
+      "description": "Strukturierte Kurse für alle Niveaus"
+    },
+    "travelAgency": {
+      "title": "Reisebüro",
+      "description": "Wir begleiten Sie bei allen Schritten zur Niederlassung in Deutschland: Berufsausbildung, Direktbeschäftigung, Familienzusammenführung, Hochschulstudium."
+    },
+    "eclCenter": {
+      "title": "ECL-Prüfungszentrum",
+      "description": "ITLA Academy ist ein offizielles Zentrum für ECL-Prüfungen (European Consortium for the Certificate of Attainment in Modern Languages), die international anerkannt sind."
+    },
+    "ourCenters": {
+      "title": "Unsere Zentren",
+      "description": "3 Zentren in Lomé zu Ihren Diensten"
+    },
+    "whyChooseUs": {
+      "title": "Warum ITLA Academy wählen?",
+      "reason1": {
+        "title": "Qualifizierte Lehrer",
+        "description": "Erfahrenes und diplomiertes pädagogisches Team"
+      },
+      "reason2": {
+        "title": "Moderne Methoden",
+        "description": "Kommunikativer und interaktiver Ansatz"
+      },
+      "reason3": {
+        "title": "Persönliche Betreuung",
+        "description": "Individuelle Begleitung jedes Studenten"
+      },
+      "reason4": {
+        "title": "Offizielles ECL-Zentrum",
+        "description": "International anerkannte Zertifizierungen"
+      },
+      "reason5": {
+        "title": "Vollständige Dienste",
+        "description": "Ausbildung + Reise + Prüfungen"
+      },
+      "reason6": {
+        "title": "Hohe Erfolgsquote",
+        "description": "Unsere Studenten erreichen ihre Ziele"
+      }
+    },
+    "finalCta": {
+      "title": "Bereit, Ihr Abenteuer zu beginnen?",
+      "description": "Treten Sie ITLA Academy bei und bauen Sie Ihre Zukunft in Deutschland auf",
+      "button": "Kontaktieren Sie uns"
+    }
+  },
+  "about": {
+    "title": "Über ITLA Academy",
+    "subtitle": "Technisches Institut für Angewandte Sprachen",
+    "intro": "ITLA Academy entstand aus dem Wunsch, eine Brücke zwischen Togo und Deutschland zu schaffen, indem wir qualitativ hochwertige Sprachausbildung und umfassende Unterstützung für all Ihre Projekte in Deutschland anbieten.",
+    "mission": {
+      "title": "Unsere Mission",
+      "description": "Kompetente Deutschlerner auszubilden und sie bei der Verwirklichung ihrer beruflichen, akademischen oder persönlichen Projekte in Deutschland zu begleiten."
+    },
+    "vision": {
+      "title": "Unsere Vision",
+      "description": "Die Referenz in Togo für das Deutschlernen und die Begleitung nach Deutschland zu werden."
+    },
+    "values": {
+      "title": "Unsere Werte",
+      "quality": "Unterrichtsqualität",
+      "excellence": "Pädagogische Exzellenz",
+      "support": "Persönliche Begleitung",
+      "integrity": "Integrität und Transparenz"
+    },
+    "team": {
+      "title": "Unser Team",
+      "description": "Ein Team aus qualifizierten Lehrern und erfahrenen Beratern zu Ihren Diensten."
+    }
+  },
+  "courses": {
+    "title": "Unsere Deutschkurse",
+    "subtitle": "Strukturierte Kurse von A1 bis B2",
+    "description": "Wir bieten vollständige Deutschkurse gemäß dem Gemeinsamen Europäischen Referenzrahmen für Sprachen (GER) an.",
+    "duration": "Dauer",
+    "objectives": "Ziele",
+    "outcomes": "Perspektiven",
+    "levels": {
+      "a1": {
+        "name": "Niveau A1 - Anfänger",
+        "description": "Entdeckungsniveau - Erste Interaktionen auf Deutsch"
+      },
+      "a2": {
+        "name": "Niveau A2 - Grundstufe",
+        "description": "Überlebensniveau - Einfache alltägliche Kommunikation"
+      },
+      "b1": {
+        "name": "Niveau B1 - Mittelstufe",
+        "description": "Schwellenniveau - Autonomie in alltäglichen Situationen"
+      },
+      "b2": {
+        "name": "Niveau B2 - Fortgeschritten",
+        "description": "Fortgeschrittenes Niveau - Fließende und argumentierte Kommunikation"
+      }
+    },
+    "modes": {
+      "title": "Ausbildungsformen",
+      "inPerson": "Präsenzunterricht",
+      "online": "Online"
+    }
+  },
+  "travel": {
+    "title": "Reisebüro nach Deutschland",
+    "subtitle": "Ihr Projekt, unsere Expertise",
+    "intro": "ITLA Academy begleitet Sie bei allen Schritten zur Verwirklichung Ihres Projekts in Deutschland.",
+    "services": {
+      "title": "Unsere Dienstleistungen",
+      "training": {
+        "title": "Berufsausbildung",
+        "description": "Ausbildung - Duale Ausbildung in verschiedenen gefragten Berufen in Deutschland"
+      },
+      "employment": {
+        "title": "Direktbeschäftigung",
+        "description": "Direkte Beschäftigungsmöglichkeiten bei deutschen Arbeitgebern"
+      },
+      "family": {
+        "title": "Familienzusammenführung",
+        "description": "Begleitung, um Ihre Familie in Deutschland zu treffen"
+      },
+      "studies": {
+        "title": "Hochschulstudium",
+        "description": "Zulassung an deutschen Universitäten und Hochschulen"
+      }
+    },
+    "process": {
+      "title": "Unser Prozess",
+      "step1": {
+        "title": "Beratung",
+        "description": "Analyse Ihres Profils und Ihrer Ziele"
+      },
+      "step2": {
+        "title": "Sprachvorbereitung",
+        "description": "Deutschausbildung auf dem erforderlichen Niveau"
+      },
+      "step3": {
+        "title": "Zusammenstellung der Unterlagen",
+        "description": "Hilfe bei der Vorbereitung aller Dokumente"
+      },
+      "step4": {
+        "title": "Verwaltungsverfahren",
+        "description": "Begleitung bei Visa und Formalitäten"
+      },
+      "step5": {
+        "title": "Abreise und Ankunft",
+        "description": "Unterstützung bis zu Ihrer Niederlassung in Deutschland"
+      }
+    },
+    "cta": "Kontaktieren Sie uns für Ihr Projekt"
+  },
+  "ecl": {
+    "title": "ECL-Prüfung - European Consortium for the Certificate of Attainment in Modern Languages",
+    "subtitle": "International anerkannte Zertifizierung",
+    "intro": "ITLA Academy ist ein offizielles ECL-Prüfungszentrum, das es Ihnen ermöglicht, Ihr Deutschniveau mit internationaler Anerkennung zu zertifizieren.",
+    "about": {
+      "title": "Was ist ECL?",
+      "description": "ECL ist ein in ganz Europa und darüber hinaus anerkanntes Sprachzertifizierungssystem. Es bewertet Ihre Fähigkeiten im mündlichen und schriftlichen Verstehen und Ausdruck."
+    },
+    "levels": {
+      "title": "Verfügbare Niveaus",
+      "description": "Prüfungen verfügbar für alle Niveaus von A1 bis C1"
+    },
+    "recognition": {
+      "title": "Internationale Anerkennung",
+      "description": "ECL-Zertifikate werden von Universitäten, Arbeitgebern und Institutionen in Europa und weltweit anerkannt."
+    },
+    "preparation": {
+      "title": "Prüfungsvorbereitung",
+      "description": "Wir bieten spezifische Vorbereitungssitzungen an, um Ihre Erfolgschancen zu maximieren."
+    },
+    "registration": {
+      "title": "Prüfungsanmeldung",
+      "description": "Prüfungssitzungen werden regelmäßig organisiert. Melden Sie sich jetzt an.",
+      "button": "Für ECL-Prüfung anmelden"
+    }
+  },
+  "centers": {
+    "title": "Unsere Zentren in Lomé",
+    "subtitle": "3 Zentren, um Sie besser zu bedienen",
+    "description": "ITLA Academy verfügt über drei Zentren in Lomé, ausgestattet mit modernen und zugänglichen Räumen.",
+    "center1": {
+      "name": "Agoè démakpoè",
+      "landmark": "Auto-Kirche"
+    },
+    "center2": {
+      "name": "Adidogomé Atigangomé",
+      "landmark": "Sanol-Station"
+    },
+    "center3": {
+      "name": "Kogan",
+      "landmark": "Moschee, Rathaus, Afiadegnigban"
+    },
+    "visitUs": "Besuchen Sie uns"
+  },
+  "contact": {
+    "title": "Kontaktieren Sie uns",
+    "subtitle": "Wir hören Ihnen zu",
+    "form": {
+      "name": "Vollständiger Name",
+      "email": "E-Mail",
+      "phone": "Telefon",
+      "subject": "Betreff",
+      "message": "Nachricht",
+      "send": "Nachricht senden"
+    },
+    "info": {
+      "title": "Kontaktinformationen",
+      "phones": "Telefone",
+      "email": "E-Mail",
+      "hours": "Öffnungszeiten",
+      "hoursValue": "Montag - Samstag: 8:00 - 18:00 Uhr"
+    },
+    "success": "Ihre Nachricht wurde erfolgreich gesendet. Wir werden Ihnen so schnell wie möglich antworten.",
+    "error": "Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut."
+  },
+  "registration": {
+    "course": {
+      "title": "Anmeldung für Deutschkurse",
+      "firstName": "Vorname",
+      "lastName": "Nachname",
+      "phone": "Telefon",
+      "email": "E-Mail",
+      "center": "Zentrum",
+      "selectCenter": "Zentrum auswählen",
+      "level": "Niveau",
+      "selectLevel": "Niveau auswählen",
+      "mode": "Modus",
+      "selectMode": "Modus auswählen",
+      "inPerson": "Präsenzunterricht",
+      "online": "Online",
+      "submit": "Anmelden",
+      "success": "Ihre Anmeldung wurde erfolgreich registriert. Wir werden Sie in Kürze kontaktieren.",
+      "error": "Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut."
+    },
+    "ecl": {
+      "title": "Anmeldung für ECL-Prüfung",
+      "firstName": "Vorname",
+      "lastName": "Nachname",
+      "phone": "Telefon",
+      "email": "E-Mail",
+      "eclLevel": "ECL-Niveau",
+      "selectLevel": "Niveau auswählen",
+      "examCenter": "Prüfungszentrum",
+      "selectCenter": "Zentrum auswählen",
+      "submit": "Für Prüfung anmelden",
+      "success": "Ihre Prüfungsanmeldung wurde erfolgreich registriert. Wir werden Sie bezüglich der Details kontaktieren.",
+      "error": "Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut."
+    }
+  },
+  "admin": {
+    "dashboard": {
+      "title": "Dashboard",
+      "courseRegistrations": "Kursanmeldungen",
+      "eclRegistrations": "ECL-Anmeldungen",
+      "contactMessages": "Nachrichten",
+      "viewAll": "Alle anzeigen"
+    },
+    "courseRegistrations": {
+      "title": "Kursanmeldungen",
+      "name": "Name",
+      "email": "E-Mail",
+      "phone": "Telefon",
+      "center": "Zentrum",
+      "level": "Niveau",
+      "mode": "Modus",
+      "status": "Status",
+      "date": "Datum",
+      "actions": "Aktionen",
+      "delete": "Löschen",
+      "confirmDelete": "Sind Sie sicher, dass Sie diese Anmeldung löschen möchten?",
+      "statuses": {
+        "pending": "Ausstehend",
+        "confirmed": "Bestätigt",
+        "cancelled": "Storniert"
+      }
+    },
+    "eclRegistrations": {
+      "title": "ECL-Prüfungsanmeldungen",
+      "name": "Name",
+      "email": "E-Mail",
+      "phone": "Telefon",
+      "level": "Niveau",
+      "center": "Zentrum",
+      "status": "Status",
+      "date": "Datum",
+      "actions": "Aktionen",
+      "delete": "Löschen",
+      "confirmDelete": "Sind Sie sicher, dass Sie diese Anmeldung löschen möchten?"
+    }
+  }
+}

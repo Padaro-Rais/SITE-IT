@@ -1,0 +1,140 @@
+<div class="home-page">
+  <app-carousel [slides]="slides" [autoPlay]="true" [interval]="4000"></app-carousel>
+
+  <div class="cta-buttons">
+    <a routerLink="/courses" class="cta-btn primary">
+      Inscription aux formations
+    </a>
+    <a (click)="openForm()" class="cta-btn secondary">
+      Inscription à l'examen ECL
+    </a>
+  </div>
+
+  <section class="section image-text-section">
+    <div class="container">
+      <div class="image-text-block">
+        <div class="image-part">
+          <img src="./assets/13.jpeg" alt="Formation en allemand">
+          <div class="image-border orange"></div>
+        </div>
+        <div class="text-part">
+          <h2>Formations en Allemand de Qualité</h2>
+          <p>ITLA Academy est le leader de la formation en allemand au Togo. Nos programmes sont conçus selon le Cadre Européen Commun de Référence pour les Langues (CECRL), garantissant une progression structurée et efficace.</p>
+          <p>Du niveau débutant A1 au niveau avancé B2, nos enseignants qualifiés vous accompagnent avec des méthodes pédagogiques modernes et interactives.</p>
+          <a routerLink="/courses" class="btn-discover">Découvrir nos formations</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section image-text-section reverse bg-light">
+    <div class="container">
+      <div class="image-text-block">
+        <div class="text-part">
+          <h2>Centre d'Examen ECL Agréé</h2>
+          <p>ITLA Academy est officiellement reconnu comme centre d'examen ECL (European Consortium for the Certificate of Attainment in Modern Languages).</p>
+          <p>L'ECL est une certification linguistique internationalement reconnue qui évalue vos compétences en allemand selon les standards européens. Passez votre examen dans nos locaux modernes avec un encadrement professionnel.</p>
+          <a routerLink="/ecl-exam" class="btn-discover">En savoir plus sur l'ECL</a>
+        </div>
+        <div class="image-part">
+          <img src="./assets/ecl.jpeg" alt="Examen ECL">
+          <div class="image-border cyan"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section featured-cards">
+    <div class="container">
+      <h2 class="section-title-center">Nos Services</h2>
+      
+      <div class="cards-grid">
+        <div class="featured-card red-accent">
+          <div class="card-image">
+            <img src="./assets/it.jpeg" alt="Voyage">
+          </div>
+          <div class="card-content">
+            <h3>Institut Technique de Langues Appliquées</h3>
+            <p>Nous vous accompagnons dans toutes vos démarches pour étudier ou travailler en Allemagne. Assistance visa, hébergement, inscription universitaire et bien plus.</p>
+            <a routerLink="/travel-agency" class="card-link">Découvrir →</a>
+          </div>
+        </div>
+
+        <div class="featured-card orange-accent">
+          <div class="card-image">
+            <img src="./assets/a3.jpeg" alt="Nos centres">
+          </div>
+          <div class="card-content">
+            <h3>Plusieurs Centres au Togo</h3>
+            <p>Nos centres modernes et équipés sont répartis stratégiquement à travers le Togo pour vous offrir un accès facile à nos formations de qualité.</p>
+            <a routerLink="/centers" class="card-link">Voir nos centres →</a>
+          </div>
+        </div>
+
+        <div class="featured-card cyan-accent">
+          <div class="card-image">
+            <img src="./assets/it3.jpeg" alt="Enseignants qualifiés">
+          </div>
+          <div class="card-content">
+            <h3>Enseignants Experts</h3>
+            <p>Notre équipe pédagogique est composée d'enseignants certifiés et expérimentés, passionnés par la transmission de la langue allemande.</p>
+            <a routerLink="/about" class="card-link">À propos →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section stats-section">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-box">
+          <div class="stat-number">95%</div>
+          <div class="stat-label">Taux de réussite aux examens</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-number">500+</div>
+          <div class="stat-label">Étudiants formés chaque année</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-number">5</div>
+          <div class="stat-label">Centres à travers le Togo</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-number">15+</div>
+          <div class="stat-label">Années d'expérience</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section image-text-section">
+    <div class="container">
+      <div class="image-text-block">
+        <div class="image-part">
+          <img src="https://images.pexels.com/photos/267669/pexels-photo-267669.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Pourquoi l'allemand">
+          <div class="image-border orange"></div>
+        </div>
+        <div class="text-part">
+          <h2>Pourquoi Apprendre l'Allemand ?</h2>
+          <ul class="benefits-list">
+            <li>L'allemand est la langue la plus parlée en Europe</li>
+            <li>Accédez à des opportunités d'études en Allemagne</li>
+            <li>Boostez votre carrière professionnelle</li>
+            <li>L'Allemagne offre d'excellentes conditions de vie</li>
+            <li>Forte demande de germanophones dans le monde</li>
+          </ul>
+          <a routerLink="/about" class="btn-discover">En savoir plus</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section final-cta">
+    <div class="container text-center">
+      <h2>Prêt à commencer votre parcours linguistique ?</h2>
+      <p>Rejoignez des centaines d'étudiants qui ont réalisé leurs rêves avec ITLA Academy</p>
+      <a routerLink="/contact" class="btn-large">Contactez-nous maintenant</a>
+    </div>
+  </section>
+</div>

@@ -1,0 +1,42 @@
+<div class="registrations">
+  <h1>{{ 'admin.courseRegistrations.title' | translate }}</h1>
+
+  <div *ngIf="loading" class="loading">{{ 'common.loading' | translate }}</div>
+
+  <div *ngIf="!loading && registrations.length === 0" class="empty">
+    Aucune inscription pour le moment.
+  </div>
+
+  <div *ngIf="!loading && registrations.length > 0" class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th>{{ 'admin.courseRegistrations.name' | translate }}</th>
+          <th>{{ 'admin.courseRegistrations.email' | translate }}</th>
+          <th>{{ 'admin.courseRegistrations.phone' | translate }}</th>
+          <th>{{ 'admin.courseRegistrations.center' | translate }}</th>
+          <th>{{ 'admin.courseRegistrations.level' | translate }}</th>
+          <th>{{ 'admin.courseRegistrations.mode' | translate }}</th>
+          <th>{{ 'admin.courseRegistrations.date' | translate }}</th>
+          <th>{{ 'admin.courseRegistrations.actions' | translate }}</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let reg of registrations">
+          <td>{{ reg.first_name }} {{ reg.last_name }}</td>
+          <td>{{ reg.email }}</td>
+          <td>{{ reg.phone }}</td>
+          <td>{{ reg.center }}</td>
+          <td><span class="badge">{{ reg.level }}</span></td>
+          <td>{{ reg.mode }}</td>
+          <td>{{ reg.created_at | date:'dd/MM/yyyy' }}</td>
+          <td>
+            <button (click)="deleteRegistration(reg.id!)" class="btn-delete">
+              {{ 'admin.courseRegistrations.delete' | translate }}
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
