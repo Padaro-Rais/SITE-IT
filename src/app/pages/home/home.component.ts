@@ -4,15 +4,22 @@ import { RouterModule } from '@angular/router';
 import { CarouselComponent, Slide } from '../../shared/components/carousel/carousel.component';
 import { COURSES } from '../../models';
 import { CENTERS } from '../../models';
-
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
+import { Newsletter } from '../../services/newsletter';
+ 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule, RouterModule, CarouselComponent],
+  imports: [CommonModule, RouterModule, CarouselComponent,ReactiveFormsModule],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
 export class HomeComponent {
+
+  showPopup = false;
+isLoading = false;
+
   slides: Slide[] = [
     {
       title: 'Bienvenue chez ITLA Academy',
@@ -73,4 +80,53 @@ export class HomeComponent {
   openForm() {
     window.open('https://exam.eclexam.eu/', '_blank');
   }
+
+
+  newsletterForm!: any;
+successMessage: string = '';
+
+constructor(private fb: FormBuilder, private newsletterService: Newsletter) {}
+
+ngOnInit() {
+  this.newsletterForm = this.fb.group({
+    email: ['', [Validators.required, Validators.email]]
+  });
+
+  const alreadySeen = sessionStorage.getItem('newsletter_seen');
+
+  if (!alreadySeen) {
+    this.showPopup = true;
+  }
+}
+
+
+
+subscribe() {
+  if (this.newsletterForm.valid) {
+    const email = this.newsletterForm.value.email;
+  this.isLoading = true; // 🔥 START SPINNER
+    this.newsletterService.subscribe(email).subscribe({
+      next: (res: any) => {
+        console.log(res.message);
+        
+         this.successMessage = "Merci ! Vous êtes inscrit à notre newsletter.";
+               this.isLoading = false;
+
+               alert("Merci ! Vous êtes inscrit à notre newsletter.")
+        this.newsletterForm.reset();
+        this.showPopup = false;
+      },
+      error: (err) => {
+        console.error(err);
+         this.isLoading = false;
+        this.successMessage = "Erreur lors de l'inscription";
+      }
+    });
+  }
+}
+
+closePopup() {
+  this.showPopup = false;
+  sessionStorage.setItem('newsletter_seen', 'true');
+}
 }

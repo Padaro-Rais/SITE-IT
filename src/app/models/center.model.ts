@@ -26,9 +26,9 @@ export const CENTERS: Center[] = [
     phone: ['70 64 66 41', '70 64 66 34'],
   },
   {
-    id: 'kogan',
-    name: 'Kogan',
-    address: 'Kogan',
+    id: 'kpogan',
+    name: 'Kpogan',
+    address: 'Kpogan',
     landmark: 'Mosquée, Mairie, Afiadegnigban',
     phone: ['70 64 66 41', '70 64 66 34'],
   },

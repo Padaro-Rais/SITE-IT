@@ -15,79 +15,53 @@ interface GalleryImage {
   styleUrls: ['./gallery.component.scss']
 })
 export class GalleryComponent {
-  images: GalleryImage[] = [
-    {
-      url: './assets/1.jpeg',
-      title: 'Cours de langues',
-      description: 'Apprenez l\'allemand et le français dans nos salles de classe modernes'
-    },
-    {
-      url: './assets/2.jpeg',
-      title: 'Centre Douala',
-      description: 'Notre centre principal à Douala avec des équipements de pointe'
-    },
-    {
-      url: './assets/3.jpeg',
-      title: 'Étudiants actifs',
-      description: 'Nos étudiants en pleine session d\'apprentissage'
-    },
-    {
-      url: './assets/4.jpeg',
-      title: 'Examens ECL',
-      description: 'Centre d\'examen ECL certifié pour le français et l\'allemand'
-    },
-    {
-      url: './assets/5.jpeg',
-      title: 'Bibliothèque',
-      description: 'Une large collection de ressources pédagogiques'
-    },
-    {
-      url: './assets/6.jpeg',
-      title: 'Laboratoire multimédia',
-      description: 'Équipements modernes pour l\'apprentissage des langues'
-    },
+images: GalleryImage[] = [
+  { url: './assets/1.jpeg', title: 'ITLA Academy', description: 'Activités de formation' },
+  { url: './assets/2.jpeg', title: 'ITLA Academy', description: 'Activités de formation' },
+  { url: './assets/3.jpeg', title: 'ITLA Academy', description: 'Activités de formation' },
+  { url: './assets/4.jpeg', title: 'ITLA Academy', description: 'Activités de formation' },
+  { url: './assets/5.jpeg', title: 'ITLA Academy', description: 'Activités de formation' },
+  { url: './assets/6.jpeg', title: 'ITLA Academy', description: 'Activités de formation' },
+  { url: './assets/7.jpeg', title: 'ITLA Academy', description: 'Activités de formation' },
+  { url: './assets/8.jpeg', title: 'ITLA Academy', description: 'Activités de formation' },
+  { url: './assets/9.jpeg', title: 'ITLA Academy', description: 'Activités de formation' },
+  { url: './assets/10.jpeg', title: 'ITLA Academy', description: 'Activités de formation' },
 
+  { url: './assets/11.jpeg', title: 'ITLA Academy', description: 'Activités de formation' },
+  { url: './assets/12.jpeg', title: 'ITLA Academy', description: 'Activités de formation' },
+  { url: './assets/13.jpeg', title: 'ITLA Academy', description: 'Activités de formation' },
+  { url: './assets/14.jpeg', title: 'ITLA Academy', description: 'Activités de formation' },
+  { url: './assets/15.jpeg', title: 'ITLA Academy', description: 'Activités de formation' },
+  { url: './assets/16.jpeg', title: 'ITLA Academy', description: 'Activités de formation' },
+  { url: './assets/17.jpeg', title: 'ITLA Academy', description: 'Activités de formation' },
+  { url: './assets/18.jpeg', title: 'ITLA Academy', description: 'Activités de formation' },
+  { url: './assets/19.jpeg', title: 'ITLA Academy', description: 'Activités de formation' },
+  { url: './assets/20.jpg', title: 'ITLA Academy', description: 'Activités de formation' },
 
+  { url: './assets/21.jpeg', title: 'ITLA Academy', description: 'Activités de formation' },
+  { url: './assets/22.jpeg', title: 'ITLA Academy', description: 'Activités de formation' },
+  { url: './assets/23.jpeg', title: 'ITLA Academy', description: 'Activités de formation' },
+  { url: './assets/24.jpeg', title: 'ITLA Academy', description: 'Activités de formation' },
+  { url: './assets/25.jpeg', title: 'ITLA Academy', description: 'Activités de formation' },
+  { url: './assets/26.jpeg', title: 'ITLA Academy', description: 'Activités de formation' },
+  { url: './assets/27.jpeg', title: 'ITLA Academy', description: 'Activités de formation' },
+  { url: './assets/28.jpeg', title: 'ITLA Academy', description: 'Activités de formation' },
+  { url: './assets/29.jpeg', title: 'ITLA Academy', description: 'Activités de formation' },
+  { url: './assets/30.jpeg', title: 'ITLA Academy', description: 'Activités de formation' },
 
-    {
-      url: './assets/g1.jpeg',
-      title: 'Laboratoire multimédia',
-      description: 'Équipements modernes pour l\'apprentissage des langues'
-    },
-
-    {
-      url: './assets/g2.jpeg',
-      title: 'Laboratoire multimédia',
-      description: 'Équipements modernes pour l\'apprentissage des langues'
-    },
-
-    {
-      url: './assets/g3.jpeg',
-      title: 'Laboratoire multimédia',
-      description: 'Équipements modernes pour l\'apprentissage des langues'
-    },
-
-    {
-      url: './assets/g4.jpeg',
-      title: 'Laboratoire multimédia',
-      description: 'Équipements modernes pour l\'apprentissage des langues'
-    }
-    ,
-
-    {
-      url: './assets/g5.jpeg',
-      title: 'Laboratoire multimédia',
-      description: 'Équipements modernes pour l\'apprentissage des langues'
-    }
-
-    ,
-
-    {
-      url: './assets/g6.jpeg',
-      title: 'Laboratoire multimédia',
-      description: 'Équipements modernes pour l\'apprentissage des langues'
-    }
-  ];
+  { url: './assets/31.jpeg', title: 'ITLA Academy', description: 'Activités de formation' },
+  { url: './assets/32.jpeg', title: 'ITLA Academy', description: 'Activités de formation' },
+  { url: './assets/33.jpeg', title: 'ITLA Academy', description: 'Activités de formation' },
+  { url: './assets/34.jpeg', title: 'ITLA Academy', description: 'Activités de formation' },
+  { url: './assets/gg/35.jpg', title: 'ITLA Academy', description: 'Activités de formation' },
+  { url: './assets/gg/36.jpg', title: 'ITLA Academy', description: 'Activités de formation' },
+  { url: './assets/gg/37.jpg', title: 'ITLA Academy', description: 'Activités de formation' },
+  { url: './assets/gg/38.jpg', title: 'ITLA Academy', description: 'Activités de formation' },
+  { url: './assets/gg/39.jpg', title: 'ITLA Academy', description: 'Activités de formation' },
+];
+shuffle(array: any[]) {
+  return array.sort(() => Math.random() - 0.5);
+}
 
   selectedImage: GalleryImage | null = null;
 
