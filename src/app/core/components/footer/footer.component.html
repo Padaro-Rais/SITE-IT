@@ -1,50 +1,130 @@
 <footer class="footer">
+
   <div class="container">
+
     <div class="footer-content">
-      <div class="footer-section">
-        <h3>À propos</h3>
-        <p>ITLA-Academy, votre partenaire pour l'excellence en formation d'allemand au Togo. Centre agréé pour les examens ECL.</p>
+
+      <!-- =================================================
+           À PROPOS + LOGOS
+      ================================================== -->
+      <div class="footer-section about-section">
+
+        <!-- LES DEUX LOGOS -->
+        <div class="footer-logos">
+
+          <a routerLink="/" class="footer-logo-link">
+            <img
+              src="assets/lola.jpeg"
+              alt="ITLA-Academy"
+              class="footer-logo main-logo"
+            >
+          </a>
+
+          <div class="logo-separator"></div>
+
+          <div class="footer-logo-link secondary-footer-logo">
+            <img
+              src="assets/la.jpeg"
+              alt="Partenaire ITLA-Academy"
+              class="footer-logo"
+            >
+          </div>
+
+        </div>
+
+        
+
+        <p>
+          Votre expert en formation et en emploi direct en Allemagne.
+        </p>
+
       </div>
 
+
+      <!-- =================================================
+           LIENS RAPIDES
+      ================================================== -->
       <div class="footer-section">
+
         <h3>Liens rapides</h3>
+
         <nav class="footer-nav">
+
           <a routerLink="/">Accueil</a>
+
           <a routerLink="/about">À propos</a>
+
           <a routerLink="/courses">Formations</a>
-          <a routerLink="/travel-agency">voyage </a>
-          <a routerLink="/ecl-exam">Examen ECL</a>
-          <a routerLink="/centers">Nos centres</a>
+
+          <a routerLink="/travel-agency">
+            Voyage en Allemagne
+          </a>
+
+          <a routerLink="/ecl-exam">
+            Examen ECL
+          </a>
+
+          <a routerLink="/centers">
+            Nos centres
+          </a>
+
         </nav>
+
       </div>
 
-<div class="footer-section">
-  <h3>Contactez-nous</h3>
 
-  <div class="contact-info">
-    <p><strong>Nos agences :</strong></p>
+      <!-- =================================================
+           CONTACT
+      ================================================== -->
+      <div class="footer-section">
 
-    <p>
-      <strong>Agoé :</strong> +228 72 69 66 66
-    </p>
+        <h3>Contactez-nous</h3>
 
-    <p>
-      <strong>Adidogomé :</strong> +228 70 64 66 34
-    </p>
+        <div class="contact-info">
 
-    <p>
-      <strong>Kpogan :</strong> +228 70 27 13 14
-    </p>
+          <p>
+            <strong>Nos agences :</strong>
+          </p>
 
-    <p class="mt-1">
-      <strong>Email :</strong> info@itlaacademy.de
-    </p>
-  </div>
-</div>
+          <p>
+            <strong>Agoé :</strong>
+            +228 72 69 66 66
+          </p>
+
+          <p>
+            <strong>Adidogomé :</strong>
+            +228 70 64 66 34
+          </p>
+
+          <p>
+            <strong>Kpogan :</strong>
+            +228 70 27 13 14
+          </p>
+
+          <p class="mt-1">
+            <strong>Email :</strong>
+            info@itlaacademy.de
+          </p>
+
+        </div>
+
+      </div>
+
     </div>
 
+
+    <!-- =================================================
+         BOTTOM
+    ================================================== -->
     <div class="footer-bottom">
-      <p>&copy; {{ currentYear }} ITLA-Academy. Tous droits réservés.</p>
+
+      <p>
+        &copy; {{ currentYear }} ITLA-Academy.
+        Tous droits réservés.
+      </p>
+
     </div>
+
   </div>
+
 </footer>

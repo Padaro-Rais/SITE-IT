@@ -2659,3 +2659,63 @@
   }
 
 }
+
+.hero-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  width: 100%;
+  max-width: 850px;
+  margin: 2rem auto 0;
+}
+
+
+.btn-preparatory {
+  min-height: 58px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.btn-preparatory {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+}
+
+
+
+.level-card.on-request {
+  position: relative;
+  border: 1px dashed #0074ad;
+  background: linear-gradient(
+    145deg,
+    #ffffff,
+    #f5faff
+  );
+
+  .level-tag.request {
+    background: #eef5fa;
+    color: #0074ad;
+    border: 1px solid #cfe3ef;
+  }
+
+  .level-price {
+
+    strong {
+      color: #0074ad;
+      font-size: 1.35rem;
+    }
+  }
+
+  .level-module {
+    line-height: 1.6;
+    color: #667788;
+  }
+}
+
+.level-card.on-request {
+  grid-column: 1 / -1;
+  width: 100%;
+  box-sizing: border-box;
+}
