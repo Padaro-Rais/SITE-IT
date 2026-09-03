@@ -23,7 +23,7 @@ isLoading = false;
   slides: Slide[] = [
     {
       title: 'Bienvenue chez ITLA Academy',
-      subtitle: 'Votre Expert en Voyage pour l\'Allemage',
+      subtitle: 'Votre Expert en Voyage pour l\'Allemagne',
       image: './assets/34.jpeg'
     },
     {

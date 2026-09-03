@@ -16,20 +16,20 @@ export const CENTERS: Center[] = [
     name: 'Agoè démakpoè',
     address: 'Agoè démakpoè',
     landmark: 'Église Auto',
-    phone: ['70 64 66 41', '70 64 66 34'],
+    phone: ['+228 72 69 66 66'],
   },
   {
     id: 'adidogome',
     name: 'Adidogomé Atigangomé',
     address: 'Adidogomé Atigangomé',
     landmark: 'Station sanol',
-    phone: ['70 64 66 41', '70 64 66 34'],
+    phone: ['+228 70 64 66 34'],
   },
   {
     id: 'kpogan',
     name: 'Kpogan',
     address: 'Kpogan',
     landmark: 'Mosquée, Mairie, Afiadegnigban',
-    phone: ['70 64 66 41', '70 64 66 34'],
+    phone: ['+228 70 27 13 14'],
   },
 ];

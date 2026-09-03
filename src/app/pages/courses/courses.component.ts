@@ -4,7 +4,7 @@ import { RouterModule } from '@angular/router';
 import { ReactiveFormsModule, FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { COURSES, CENTERS } from '../../models';
 import { CourseRegistrationService } from '../../services/course-registration.service';
-
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-courses',
   standalone: true,
@@ -23,7 +23,8 @@ export class CoursesComponent {
 
   constructor(
     private fb: FormBuilder,
-    private courseRegistrationService: CourseRegistrationService
+    private courseRegistrationService: CourseRegistrationService,
+    private route: Router
   ) {
     this.registrationForm = this.fb.group({
       first_name: ['', Validators.required],
@@ -36,11 +37,9 @@ export class CoursesComponent {
     });
   }
 
-  openForm(): void {
-    this.showForm = true;
-    this.submitted = false;
-    this.errorMessage = '';
-  }
+openForm(): void {
+  this.route.navigate(['/register']);
+}
 
   closeForm(): void {
     this.showForm = false;

@@ -200,7 +200,6 @@
 
     <form [formGroup]="newsletterForm" (ngSubmit)="subscribe()">
       <input type="email" formControlName="email" placeholder="Votre email" />
-
       <button type="submit" [disabled]="newsletterForm.invalid" subscribe()>
   <span *ngIf="!isLoading">
     S'inscrire
