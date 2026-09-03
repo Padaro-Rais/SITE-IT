@@ -11,7 +11,7 @@ export interface Course {
 export const COURSES: Course[] = [
   {
     level: 'A1',
-    duration: '3 mois',
+    duration: '08 Semaines',
     objectives: [
       'Comprendre et utiliser des expressions familières',
       'Se présenter et présenter les autres',
@@ -26,7 +26,7 @@ export const COURSES: Course[] = [
   },
   {
     level: 'A2',
-    duration: '3 mois',
+    duration: '08 Semaines',
     objectives: [
       'Comprendre des phrases isolées',
       'Communiquer sur des sujets familiers',
@@ -41,7 +41,7 @@ export const COURSES: Course[] = [
   },
   {
     level: 'B1',
-    duration: '4 mois',
+    duration: '12 Semaines',
     objectives: [
       'Comprendre les points essentiels',
       'Se débrouiller en voyage',
@@ -56,7 +56,7 @@ export const COURSES: Course[] = [
   },
   {
     level: 'B2',
-    duration: '4 mois',
+    duration: '12 Semaines',
     objectives: [
       'Comprendre des textes complexes',
       'Communiquer avec aisance',

@@ -1,5 +1,5 @@
 /*
-  # ITLA Academy Database Schema
+  # ITLA-Academy Database Schema
 
   1. New Tables
     - `course_registrations`
