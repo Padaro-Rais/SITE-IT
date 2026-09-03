@@ -28,10 +28,10 @@ export const CENTERS: Center[] = [
 
     address: 'Agoè Démakpoè',
 
-    landmark: 'Église Auto',
+    landmark: 'Église Auto Auto',
 
     phone: [
-      '+228 72 69 66 66'
+      '+228 72 69 66 66 ;72 69 99 39'
     ],
 
     image: 'assets/imag.jpeg',
