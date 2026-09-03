@@ -10,6 +10,10 @@
     padding: 0 2rem;
   }
 
+  /* =====================================================
+     TOP BAR
+  ====================================================== */
+
   .top-bar {
     background: white;
     padding: 1rem 0;
@@ -17,15 +21,22 @@
 
     .container {
       display: flex;
-      justify-content: space-between;
       align-items: center;
+      justify-content: space-between;
     }
 
+    /* =================================================
+       LOGO PRINCIPAL
+    ================================================== */
+
     .logo-section {
+      flex-shrink: 0;
+
       a {
         display: flex;
         align-items: center;
         gap: 1rem;
+
         text-decoration: none;
         color: #003366;
       }
@@ -43,35 +54,82 @@
 
       h1 {
         margin: 0;
+
         font-size: 1.8rem;
         font-weight: 700;
+
         color: #003366;
+
         letter-spacing: 1px;
       }
 
       .slogan {
-        margin: 0.25rem 0 0 0;
+        margin: 0.25rem 0 0;
+
         font-size: 0.875rem;
+
         color: #666;
+
         font-weight: 400;
       }
     }
 
+    /* =================================================
+       DEUXIÈME LOGO
+    ================================================== */
+
+    .secondary-logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      margin-left: auto;
+      margin-right: 2rem;
+
+      padding-left: 2rem;
+
+      border-left: 1px solid #e0e0e0;
+
+      img {
+        display: block;
+
+        width: auto;
+        height: 55px;
+
+        max-width: 170px;
+
+        object-fit: contain;
+      }
+    }
+
+    /* =================================================
+       BOUTONS
+    ================================================== */
+
     .top-actions {
       display: flex;
+      align-items: center;
       gap: 0.75rem;
+
+      flex-shrink: 0;
 
       .action-btn {
         padding: 0.5rem 1rem;
+
         border: none;
-        font-weight: 600;
-        font-size: 0.875rem;
-        cursor: pointer;
-        transition: all 0.3s ease;
         border-radius: 4px;
 
+        font-weight: 600;
+        font-size: 0.875rem;
+
+        cursor: pointer;
+
+        text-decoration: none;
+
+        transition: all 0.3s ease;
+
         &.red {
-          background: #E30613;
+          background: #e30613;
           color: white;
 
           &:hover {
@@ -83,26 +141,48 @@
     }
   }
 
+  /* =====================================================
+     NAVIGATION
+  ====================================================== */
+
   .main-nav {
-    background: #0055A4;
+    background: #0055a4;
     color: white;
+
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    .container {
+      display: flex;
+      align-items: center;
+    }
   }
+
+  /* =====================================================
+     MENU MOBILE
+  ====================================================== */
 
   .menu-toggle {
     display: none;
+
     flex-direction: column;
+
     background: none;
     border: none;
+
     cursor: pointer;
+
     padding: 0.5rem;
 
     span {
       width: 25px;
       height: 3px;
+
       background: white;
+
       margin: 3px 0;
+
       transition: all 0.3s ease;
+
       border-radius: 2px;
     }
 
@@ -121,59 +201,185 @@
     }
   }
 
+  /* =====================================================
+     MENU DESKTOP
+  ====================================================== */
+
   .nav-menu {
     display: flex;
+
     align-items: center;
-    gap: 0;
+
     justify-content: center;
+
+    gap: 0;
+
+    width: 100%;
 
     a {
       color: white;
+
       text-decoration: none;
+
       font-weight: 500;
+
       font-size: 0.95rem;
+
       transition: all 0.3s ease;
+
       padding: 1rem 1.5rem;
+
       border-bottom: 3px solid transparent;
+
       white-space: nowrap;
 
       &:hover {
         background: rgba(255, 255, 255, 0.1);
-        border-bottom-color: #FFB81C;
+
+        border-bottom-color: #ffb81c;
       }
 
       &.active {
         background: rgba(255, 255, 255, 0.15);
-        border-bottom-color: #FFB81C;
+
+        border-bottom-color: #ffb81c;
       }
     }
   }
 
-  @media (max-width: 968px) {
+  /* =====================================================
+     TABLET
+  ====================================================== */
+
+  @media (max-width: 1100px) {
+
     .top-bar {
+
+      .container {
+        padding: 0 1.5rem;
+      }
+
+      .logo-section {
+
+        .logo-img {
+          height: 55px;
+        }
+
+        h1 {
+          font-size: 1.6rem;
+        }
+
+        .slogan {
+          font-size: 0.78rem;
+        }
+      }
+
+      .secondary-logo {
+        margin-right: 1.2rem;
+        padding-left: 1.2rem;
+
+        img {
+          height: 48px;
+          max-width: 140px;
+        }
+      }
+
       .top-actions {
+
+        gap: 0.5rem;
+
         .action-btn {
-          padding: 0.4rem 0.75rem;
+          padding: 0.4rem 0.7rem;
           font-size: 0.75rem;
         }
       }
     }
 
     .nav-menu {
+
       a {
-        padding: 1rem 1rem;
-        font-size: 0.875rem;
+        padding: 1rem 0.9rem;
+        font-size: 0.85rem;
       }
     }
   }
 
-  @media (max-width: 768px) {
+  /* =====================================================
+     PETITE TABLETTE
+  ====================================================== */
+
+  @media (max-width: 900px) {
+
     .top-bar {
+
+      .logo-text {
+        h1 {
+          font-size: 1.45rem;
+        }
+
+        .slogan {
+          font-size: 0.7rem;
+        }
+      }
+
+      .secondary-logo {
+        margin-right: 0.8rem;
+        padding-left: 0.8rem;
+
+        img {
+          height: 43px;
+          max-width: 120px;
+        }
+      }
+
+      .top-actions {
+
+        .action-btn {
+          padding: 0.35rem 0.55rem;
+          font-size: 0.7rem;
+        }
+      }
+    }
+
+    .nav-menu {
+
+      a {
+        padding: 1rem 0.65rem;
+        font-size: 0.8rem;
+      }
+    }
+  }
+
+  /* =====================================================
+     MOBILE
+  ====================================================== */
+
+  @media (max-width: 768px) {
+
+    .container {
+      padding: 0 1rem;
+    }
+
+    .top-bar {
+
+      padding: 0.8rem 0;
+
+      .container {
+        justify-content: flex-start;
+      }
+
+      /* CACHER LE 2e LOGO SUR MOBILE */
+      .secondary-logo {
+        display: none;
+      }
+
+      /* CACHER LES BOUTONS */
       .top-actions {
         display: none;
       }
 
       .logo-section {
+
         .logo-img {
           height: 50px;
         }
@@ -188,24 +394,51 @@
       }
     }
 
+    /* =================================================
+       NAV MOBILE
+    ================================================== */
+
     .main-nav {
+
+      .container {
+        padding: 0 1rem;
+      }
+
       .menu-toggle {
         display: flex;
       }
 
       .nav-menu {
         position: fixed;
+
         top: 130px;
         left: 0;
         right: 0;
+
+        width: 100%;
+
+        display: flex;
+
         flex-direction: column;
-        background: #0055A4;
+
+        align-items: stretch;
+
+        justify-content: flex-start;
+
+        background: #0055a4;
+
         padding: 0;
+
         gap: 0;
+
         transform: translateX(-100%);
+
         transition: transform 0.3s ease;
+
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+
         max-height: calc(100vh - 130px);
+
         overflow-y: auto;
 
         &.open {
@@ -214,10 +447,55 @@
 
         a {
           width: 100%;
+
+          box-sizing: border-box;
+
           padding: 1rem 2rem;
+
           border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
           text-align: left;
+
+          font-size: 0.95rem;
         }
+      }
+    }
+  }
+
+  /* =====================================================
+     PETIT MOBILE
+  ====================================================== */
+
+  @media (max-width: 480px) {
+
+    .top-bar {
+
+      .logo-section {
+
+        a {
+          gap: 0.7rem;
+        }
+
+        .logo-img {
+          height: 45px;
+        }
+
+        h1 {
+          font-size: 1.25rem;
+        }
+
+        .slogan {
+          font-size: 0.65rem;
+        }
+      }
+    }
+
+    .main-nav {
+
+      .nav-menu {
+        top: 115px;
+
+        max-height: calc(100vh - 115px);
       }
     }
   }

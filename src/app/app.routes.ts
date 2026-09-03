@@ -40,6 +40,15 @@ export const routes: Routes = [
       {
         path: 'news',
         loadComponent: () => import('./pages/news/news.component').then(m => m.NewsComponent)
+      },
+
+       {
+        path: 'phoenix',
+        loadComponent: () => import('./pages/phoenix/phoenix').then(m => m.Phoenix)
+      },
+      {
+        path: 'cours-preparatoires',
+        loadComponent: () => import('./pages/courepre/courepre').then(m => m.Courepre)
       }
     ]
   },
