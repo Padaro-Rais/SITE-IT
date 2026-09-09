@@ -500,3 +500,17 @@
     }
   }
 }
+
+.action-btn.talents {
+  background: #f5c400;
+  color: #212529;
+  border: 2px solid #f5c400;
+  font-weight: 700;
+
+  &:hover {
+    background: #dcae00;
+    border-color: #dcae00;
+    color: #ffffff;
+    transform: translateY(-2px);
+  }
+}
